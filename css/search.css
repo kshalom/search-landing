@@ -1,0 +1,157 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../images/bg-image.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'arial';
+}
+
+
+/* NAVIGATION MENU */
+
+ul.nav-items-container {
+    list-style-type: none;
+     float: right;
+}
+
+a.nav-link {
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+    transition: all .5s ease;
+}
+
+a.nav-link:hover {
+    color: #c1ac54;
+    /* border-bottom: 2px solid red; */
+    border-width: 2px;
+    letter-spacing: 7px;
+    transition: all .5s ease;
+}
+
+nav.nav.nav-primary {
+    width: 100%;
+    float: left;
+    position: fixed;
+}
+
+li.nav-item {
+    float: left;
+}
+
+.site-logo {
+    float: left;
+}
+
+nav.nav.nav-primary {
+    background-color: #3e3d3d;
+}
+
+
+/* BODY CONTENT*/
+.inner-container {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    background-color: #2e2c31c4;
+}
+
+/* search form*/
+input.search-text {
+    width: 36%;
+    padding: .6em 1em;
+    margin-bottom: 2em;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 100;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity .5s ease;
+}
+
+input.search-text:focus {
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+
+.search-btn {
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 0.7em 0px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    width: 14em;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+button.submit-search.search-btn {
+    margin-right: 3em;
+}
+
+.btn-container{
+	display: inline-flex;
+}
+
+.search-btn:hover {
+    background-color: #c1ac54;
+    color: #fff;
+    border-color: #c1ac54;
+    transition: all .6s ease;
+}
+
+
+
+/* FOOTER*/
+footer.site-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 11px;
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+
+
+
+
+/******** MOBILE RESPONSIVE ******/
+@media(max-width: 500px){
+	.inner-container {
+	   height: 100vh;
+	}
+
+	button.submit-search.search-btn {
+	     margin-right: auto; 
+	}
+
+	.search-btn {
+	    margin-right: 0; 
+	    margin: auto;
+	    margin-bottom: 1em;
+	}
+
+	.btn-container {
+	    display: grid;
+	    text-align: center;
+	}
+
+	input.search-text {
+	    width: 65%;
+	}
+
+}
+
+
+
